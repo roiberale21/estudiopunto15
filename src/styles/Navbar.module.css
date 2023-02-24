@@ -1,0 +1,102 @@
+.navbar{
+    position: fixed;
+    min-width: 100%;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 200px;
+    background: rgba(30, 30, 30, 0.01);
+    backdrop-filter: blur(4.5px);
+    place-items: center;
+}
+
+.icons{
+    place-self: end;
+    cursor: pointer;
+}
+.icons img {
+    margin-right: 20px;
+    
+  }
+  .icons img:hover{
+    opacity: 0.6;
+  }
+.nav-item{
+    font-family: 'airstrike-laser' , sans-serif;
+    font-size: .8125rem;
+    margin: 40px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.nav-item:hover{
+    opacity: 0.6;
+  }
+.search{
+    width: 200px;
+    font-family: 'airstrike-laser' , sans-serif;
+    font-size: .8125rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    color: rgb(255, 255, 255);
+    place-self: center;
+    cursor: pointer;
+}
+
+.conter{
+    left: 111px;
+    bottom: 28px;
+    position: relative;
+    text-align: center;
+    width: 16px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 15px;
+    background-color: rgb(27, 238, 168);
+    border-radius: 20px;
+    font-family: 'airstrike' , sans-serif;
+}
+.bag{
+ display: none;
+
+}
+.hamburger{
+  display: none;
+}
+
+@media (max-width: 640px){
+  .navbar{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logo{
+    grid-column:  2;
+    place-self: center;
+  }
+  .search{
+    display: none;
+  }
+  .nav-item{
+    display: none;
+  }
+  .icons{
+    display: none;
+  }
+  .hamburger{
+    grid-column: 1;
+    display: grid;
+    place-self: center;
+    grid-row: 1 / 2;
+  }
+  .bag{
+    margin-right: 1em;
+    grid-column: 3;
+    display: grid;
+    grid-row: 1 / 2;
+  }
+ .conter{
+  position: relative;
+    left: 138px;
+    bottom: 1.8em;
+ }
+
+}

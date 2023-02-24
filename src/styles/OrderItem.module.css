@@ -1,0 +1,26 @@
+
+.OrderItem {
+    display: grid;
+    font-family: 'airstrike' , sans-serif;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 10px;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+  .OrderItem figure {
+    margin: 0;
+  }
+  .OrderItem figure img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  .OrderItem p:nth-child(2) {
+    color: rgb(112, 112, 112);
+    margin-top: 10px;
+  }
+  
+  .close_img{
+    cursor: pointer;
+  }
